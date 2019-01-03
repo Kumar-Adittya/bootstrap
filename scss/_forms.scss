@@ -206,8 +206,12 @@ textarea.form-control {
 }
 
 .form-check-input {
-  position: absolute;
-  margin-top: $form-check-input-margin-y;
+  position: absolute; 
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   margin-left: -$form-check-input-gutter;
 
   &:disabled ~ .form-check-label {
